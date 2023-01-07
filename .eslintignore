@@ -1,0 +1,9 @@
+node_modules
+.build
+.husky
+coberage
+cjs
+esm
+umd
+dist
+test/

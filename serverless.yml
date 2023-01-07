@@ -1,0 +1,36 @@
+service: culqui-technical-test
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-2
+  environment:
+    NODE_ENV: dev
+    MONGO_URL: mongodb+srv://culquiuser:KyvDvjGi7UJftSwy@doktuztelehealth.q23up.mongodb.net/culquidb
+
+plugins:
+  - serverless-plugin-typescript 
+  - serverless-offline
+
+package:
+  exclude:
+    - config/.env.stg
+    - config/.env.pro
+  include:
+    - config/.env.dev
+
+functions:
+  generateToken:
+    handler: src/card/handler.generateToken
+    environment:
+      TOKEN_EXPIRATION_TIME: 900000
+    events:
+      - http:
+          path: card/generateToken
+          method: post
+  getCard:
+    handler: src/card/handler.getCard
+    events:
+      - http:
+          path: card/{token}
+          method: get

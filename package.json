@@ -1,0 +1,47 @@
+{
+  "name": "culqui-technical-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "start": "npx serverless offline",
+    "deploy": "npx serverless deploy",
+    "prepare": "husky install",
+    "sonar": "sonar-scanner"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelvargasdev/culqui-technical-test.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "TypeScript",
+    "ServerLess",
+    "MongoDB Atlas",
+    "AWS Lambda"
+  ],
+  "author": "Michael Cristopher Vargas Melgar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.109",
+    "@types/jest": "^29.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.29.0",
+    "husky": "^8.0.2",
+    "jest-cucumber": "^3.0.1",
+    "lint-staged": "^13.1.0",
+    "serverless-offline": "^12.0.2",
+    "serverless-plugin-typescript": "^2.1.4",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "fast-luhn": "^2.0.1",
+    "mongoose": "^6.8.0",
+    "zod": "^3.20.2"
+  }
+}

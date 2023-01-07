@@ -1,0 +1,78 @@
+{
+	"id": "aea08717-ccd3-fae5-b0d9-fa22669db948",
+	"name": "culqui-technical-test",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Card",
+			"description": "",
+			"collectionId": "aea08717-ccd3-fae5-b0d9-fa22669db948",
+			"order": [
+				"c94ccbab-3a4c-4ac8-a14a-d3efbd1e5384",
+				"cf85939e-b4f1-2d31-0c38-044c7e50aaf6"
+			],
+			"owner": 0,
+			"folders_order": [],
+			"id": "a806af6a-5828-1817-7b30-29116236250f"
+		}
+	],
+	"folders_order": [
+		"a806af6a-5828-1817-7b30-29116236250f"
+	],
+	"timestamp": 1671066955517,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "c94ccbab-3a4c-4ac8-a14a-d3efbd1e5384",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/dev/card/generateToken",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1671122663743,
+			"name": "generateToken",
+			"description": "",
+			"collectionId": "aea08717-ccd3-fae5-b0d9-fa22669db948",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\": \"michael.c.v.m.dev@gmail.com\",\n\t\"card_number\": \"4111111111111111\",\n\t\"cvv\": 123,\n\t\"expiration_year\": \"2025\",\n\t\"expiration_month\": \"07\"\n}"
+		},
+		{
+			"id": "cf85939e-b4f1-2d31-0c38-044c7e50aaf6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/dev/card/sWoapNOxbsrgqA7U",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1671122659511,
+			"name": "getCard",
+			"description": "",
+			"collectionId": "aea08717-ccd3-fae5-b0d9-fa22669db948",
+			"responses": []
+		}
+	]
+}
